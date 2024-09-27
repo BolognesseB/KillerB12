@@ -24,7 +24,7 @@ resource "aws_eks_node_group" "worker-nodes" {
 }
 
 resource "aws_iam_role" "workers-iam-role" {
-  name = "${var.cluster_name} -nodegroup-iam-role"
+  name = "${var.cluster_name}-nodegroup-iam-role"
 
   assume_role_policy = jsonencode({
     Statement = [{
