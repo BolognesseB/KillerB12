@@ -38,8 +38,8 @@ jobs:
       - name: Run a multi-line script
         working directory: project-x/
         run: |
-        terraform init
-        terraform plan
-        terraform apply
+          terraform init
+          terraform plan
+          terraform apply -auto-approve
 
 
